@@ -4,10 +4,10 @@
 
 ## 1. 설치파일 받기
 
-[Mac ARM 프리뷰 릴리즈](https://github.com/sanghyun-io/gamja-bot-releases/releases/tag/v1.0.0-mac-arm64-preview.20261011-l)에서 다음 두 파일을 같은 폴더에 받습니다.
+[Mac ARM 프리뷰 릴리즈](https://github.com/sanghyun-io/gamja-bot-releases/releases/tag/v1.0.0-mac-arm64-preview.20261011-m)에서 다음 두 파일을 같은 폴더에 받습니다.
 
-- `Gamja-Bot-mac-arm64-l-20261011.dmg`
-- `Gamja-Bot-mac-arm64-l-20261011.dmg.sha256`
+- `Gamja-Bot-mac-arm64-m-20261011.dmg`
+- `Gamja-Bot-mac-arm64-m-20261011.dmg.sha256`
 
 Mac의  → 이 Mac에 관하여에서 칩이 Apple M 계열인지 확인합니다.
 
@@ -17,12 +17,12 @@ Mac의  → 이 Mac에 관하여에서 칩이 Apple M 계열인지 확인합�
 
 ```sh
 cd "$HOME/Downloads"
-shasum -a 256 -c Gamja-Bot-mac-arm64-l-20261011.dmg.sha256
+shasum -a 256 -c Gamja-Bot-mac-arm64-m-20261011.dmg.sha256
 ```
 
 결과가 `OK`인 경우에만 DMG를 열어 **Gamja Bot.app**을 응용 프로그램 폴더로 복사합니다. 기존 앱을 교체한다면 먼저 Gamja Bot을 종료합니다. 앱 데이터 폴더를 지우지 마세요.
 
-이 파일의 SHA-256은 `42977ffff2497307acf2ac5c8aa1646b47e5856b00ae12969721fd09a74ecfd7`입니다. 체크섬은 다운로드 파일의 일치를 확인하며, 공증이나 악성코드 검사 결과를 대신하지 않습니다.
+이 파일의 SHA-256은 `0a5ecacae20ff98519dab347875e7fdc700212e7d7aa004cec4c6a663b0236e9`입니다. 체크섬은 다운로드 파일의 일치를 확인하며, 공증이나 악성코드 검사 결과를 대신하지 않습니다.
 
 ## 3. 첫 실행의 macOS 경고
 
