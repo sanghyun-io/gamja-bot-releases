@@ -4,10 +4,10 @@
 
 ## 1. 설치파일 받기
 
-[Mac ARM 프리뷰 릴리즈](https://github.com/sanghyun-io/gamja-bot-releases/releases/tag/v1.0.0-mac-arm64-preview.20261011-n)에서 다음 두 파일을 같은 폴더에 받습니다.
+[Mac ARM 프리뷰 릴리즈](https://github.com/sanghyun-io/gamja-bot-releases/releases/tag/v1.0.0-mac-arm64-preview.20261011-o)에서 다음 두 파일을 같은 폴더에 받습니다.
 
-- `Gamja-Bot-mac-arm64-n-20261011.dmg`
-- `Gamja-Bot-mac-arm64-n-20261011.dmg.sha256`
+- `Gamja-Bot-mac-arm64-o-20261011.dmg`
+- `Gamja-Bot-mac-arm64-o-20261011.dmg.sha256`
 
 Mac의  → 이 Mac에 관하여에서 칩이 Apple M 계열인지 확인합니다.
 
@@ -17,12 +17,12 @@ Mac의  → 이 Mac에 관하여에서 칩이 Apple M 계열인지 확인합�
 
 ```sh
 cd "$HOME/Downloads"
-shasum -a 256 -c Gamja-Bot-mac-arm64-n-20261011.dmg.sha256
+shasum -a 256 -c Gamja-Bot-mac-arm64-o-20261011.dmg.sha256
 ```
 
 결과가 `OK`인 경우에만 DMG를 열어 **Gamja Bot.app**을 응용 프로그램 폴더로 복사합니다. 기존 앱을 교체한다면 먼저 Gamja Bot을 종료합니다. 앱 데이터 폴더를 지우지 마세요.
 
-이 파일의 SHA-256은 `7e7a1c980ee1196567799e1069af7d239bbf943b3dd178dd147b80c2dc1fd944`입니다. 체크섬은 다운로드 파일의 일치를 확인하며, 공증이나 악성코드 검사 결과를 대신하지 않습니다.
+이 파일의 SHA-256은 `437de138fa57f910c19e3f1257106a29be9ec63c9f49bfa7c6de696e947e48b9`입니다. 체크섬은 다운로드 파일의 일치를 확인하며, 공증이나 악성코드 검사 결과를 대신하지 않습니다.
 
 ## 3. 첫 실행의 macOS 경고
 
@@ -40,4 +40,6 @@ Apple의 [확인되지 않은 앱 실행 안내](https://support.apple.com/en-us
 
 ## 이 프리뷰에서 확인한 범위
 
-N은 자격증명 복구 데이터의 저장 호환 문제를 수정한 버전입니다. 같은 signed N 코어에서 새 계정 가입·자동 로그인 복원, API 키 오류 후 수정·연결 테스트·같은 요청 재시도, 두 에이전트의 두 차례 팀 대화와 연결 해제를 실제 CLI로 확인했습니다. 별도 Mac의 수동 설치와 GUI 전체 흐름은 아직 검증 중입니다. 기존 M에서 보류 중인 연결 해제가 있었다면 반복 실행하거나 앱 데이터·키체인 항목을 삭제하지 말고 상태를 먼저 확인하세요.
+O는 CLI 오류 조회가 선택한 프로필의 기록을 읽도록 수정한 버전입니다. 실제 O CLI에서 두 임시 프로필의 오류 조회 격리를 확인했습니다. 이 확인은 테스트용 오류 기록을 사용했으며 LLM 요청은 발생하지 않았습니다.
+
+현재 Mac mini에서 실제 교체 설치 후 같은 사용자 자동 로그인과 기존 데이터·연결 참조 보존을 확인했습니다. 같은 O의 GUI 전체 흐름과 별도 Mac의 수동 설치는 아직 검증 중입니다. 기존 N에서 확인한 팀 대화·여러 방 동시 실행·문맥 격리 결과는 이전 버전의 검증으로 구분합니다. 모든 제공자·모델의 응답이나 상품 한도를 보장하지 않습니다.
