@@ -4,10 +4,10 @@ GitHub 개발 프리뷰를 직접 설치하는 방법입니다. Apple Developer 
 
 ## 1. 설치파일 받기
 
-[Mac ARM 프리뷰 U2](https://github.com/sanghyun-io/gamja-bot-releases/releases/tag/v1.0.0-mac-arm64-preview.20261012-u2)에서 다음 두 파일을 같은 폴더에 받습니다.
+[Mac ARM 프리뷰 AA1](https://github.com/sanghyun-io/gamja-bot-releases/releases/tag/v1.0.0-mac-arm64-preview.20261013-aa1)에서 다음 두 파일을 같은 폴더에 받습니다.
 
-- `Gamja-Bot-mac-arm64-u2-20261012.dmg`
-- `Gamja-Bot-mac-arm64-u2-20261012.dmg.sha256`
+- `Gamja-Bot-mac-arm64-preview-aa1-20261013.dmg`
+- `Gamja-Bot-mac-arm64-preview-aa1-20261013.dmg.sha256`
 
 Mac의  → 이 Mac에 관하여에서 칩이 Apple M 계열인지 확인합니다.
 
@@ -17,12 +17,12 @@ Mac의  → 이 Mac에 관하여에서 칩이 Apple M 계열인지 확인합�
 
 ```sh
 cd "$HOME/Downloads"
-shasum -a 256 -c Gamja-Bot-mac-arm64-u2-20261012.dmg.sha256
+shasum -a 256 -c Gamja-Bot-mac-arm64-preview-aa1-20261013.dmg.sha256
 ```
 
 `OK`인 경우에만 DMG를 열어 **Gamja Bot.app**을 응용 프로그램 폴더로 복사합니다. 기존 앱을 교체한다면 먼저 Gamja Bot을 종료합니다. 기존 앱 데이터 폴더는 지우지 마세요.
 
-SHA-256: `d3f22bc065983c2b419e492f78a5b1b02378f7ffb0290263b21ca4c626698663`. 체크섬은 다운로드 파일의 일치를 확인하며 공증이나 악성코드 검사 결과를 대신하지 않습니다.
+SHA-256: `79585e73923a30b85e925c7a799fe4bf0c767656d8f01b941e295e01ff96a56d`. 체크섬은 다운로드 파일의 일치를 확인하며 공증이나 악성코드 검사 결과를 대신하지 않습니다.
 
 ## 3. 첫 실행의 macOS 경고
 
@@ -40,8 +40,8 @@ Apple의 [확인되지 않은 앱 실행 안내](https://support.apple.com/en-us
 
 ## 이 프리뷰에서 확인한 범위
 
-현재 Mac의 U2 교체 설치에서 기존 데이터 보존, CLI 저장 로그인 복원과 정상 가동을 확인했습니다. 같은 설치본 CLI의 Alibaba qwen3.7-plus 및 OpenCode Go longcat-2.5-preview-free text Test가 각각 성공했습니다.
+AA1의 동일한 최종 설치본에서 CLI·GUI 저장 로그인, Alibaba Coding Plan 연결·모델 테스트, 여러 대화방의 Agent 협업과 요청 결과 정리, 화면 캡처·썸네일·확대 보기, 실패 후 안전한 재시도를 확인했습니다. 원래 실패 기록과 기존 대화·연결·Agent 설정·이미지는 보존합니다.
 
-부분 결과의 최종 정리 한 표본에서 실제 동료 발언과 기록된 실패를 구분했고, 같은 요청의 재조회가 결과를 중복 생성하지 않았습니다. 원래 대화·실패 기록은 유지됐습니다. 모든 모델의 답변 정확성·실제 업무 가치가 검증됐다는 뜻은 아닙니다.
+테스트는 현재 Apple Silicon Mac에서 진행합니다. 실제 사용자 5명 평가, solo/team 비교 평가, 깨끗한 OS에서의 첫 설치는 별도 후속 검증입니다. 모든 제공자의 인증 방식과 모든 모델의 답변 정확성·업무 가치가 검증됐다는 뜻은 아닙니다. Intel Mac·Windows의 이번 버전 실제 실행과 기기 간 동기화도 아직 검증하지 않았습니다.
 
-U2의 앱 화면 전체 흐름과 새 환경에서의 첫 설치·실제 사용자 평가는 아직 검증 중입니다. 이전 T에서 확인한 여러 방 동시 활동·화면 흐름을 U2의 새 검증으로 간주하지 않습니다. 이 파일은 Apple Silicon 전용이며 Intel Mac·Windows의 U2 실제 실행은 검증하지 않았습니다.
+오류 상세는 로컬 CLI에서 조회할 수 있습니다. 원격 오류 보고 수신은 별도로 확인 중이며 인터넷 제출 성공을 보장하지 않습니다. 모델의 이미지 읽기 지원은 연결·모델별 확인 결과에 따릅니다. 화면을 캡처한 사실과 Agent가 화면 내용을 읽은 사실은 다릅니다.
